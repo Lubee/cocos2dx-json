@@ -27,6 +27,7 @@
 #include "yajl_gen.h"
 #include "CCMemoryInputStream.h"
 #include "CCJSONArray.h"
+#include "cocos2d-common.h"
 
 NS_CC_BEGIN
 

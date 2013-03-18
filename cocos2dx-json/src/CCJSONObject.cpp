@@ -25,6 +25,7 @@
 #include "CCJSONArray.h"
 #include "CCJSONParser.h"
 #include "CCJSONValue.h"
+#include "cocos2d-common.h"
 
 NS_CC_BEGIN
 
