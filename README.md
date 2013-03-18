@@ -6,7 +6,7 @@ C++ JSON parsing library for cocos2d-x, migrated from WiEngine code
 Requirement
 ===========
 cocos2dx-json project refers cocos2d-x project. You must clone cocos2d-x repository to a folder named "cocos2d-x", 
-and then clone cocos2dx-json in the same parent folder. cocos2dx-wisound also refers cocos2dx-common, so clone it in 
+and then clone cocos2dx-json in the same parent folder. cocos2dx-json also refers cocos2dx-common, so clone it in 
 same parent folder also.
 
 Demo
