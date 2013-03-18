@@ -222,7 +222,7 @@ public:
 	 * @return value string, this string should not released by caller, it is managed by json object and you must
 	 * 		copy it if you want to save it
 	 */
-	const char* optString(int index, const char* def = NULL);
+	string optString(int index, const char* def = NULL);
 };
 
 NS_CC_END

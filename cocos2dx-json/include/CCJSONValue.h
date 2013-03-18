@@ -59,9 +59,6 @@ public:
 
 	/// cast value to string value
 	static const char* castToString(CCJSONObject::KeyValue& kv);
-
-	/// return an empty string
-	static const char* copyString(const char* s);
 };
 
 NS_CC_END

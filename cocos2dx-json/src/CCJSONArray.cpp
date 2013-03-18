@@ -251,9 +251,9 @@ CCJSONArray* CCJSONArray::optJSONArray(int index) {
 	return CCJSONValue::castToArray(m_array.at(index));
 }
 
-const char* CCJSONArray::optString(int index, const char* def) {
+string CCJSONArray::optString(int index, const char* def) {
 	if(index < 0 || index >= m_array.size()) {
-		return CCJSONValue::copyString(def);
+		return def;
 	}
 
 	return CCJSONValue::castToString(m_array.at(index));

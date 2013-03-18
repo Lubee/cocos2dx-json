@@ -174,13 +174,4 @@ const char* CCJSONValue::castToString(CCJSONObject::KeyValue& kv) {
 	}
 }
 
-const char* CCJSONValue::copyString(const char* s) {
-	if(s) {
-		sprintf(s_buf, "%s", s);
-		return s_buf;
-	} else {
-		return NULL;
-	}
-}
-
 NS_CC_END

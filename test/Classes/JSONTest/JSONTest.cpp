@@ -145,14 +145,14 @@ void JSONParsing::onEnter()
     CCJSONObject* jo = CCJSONObject::create("Files/test_json");
     CCJSONArray* ja = jo->optJSONArray("f");
     CCJSONObject* jo2 = ja->optJSONObject(5);
-    const char* stringVal = jo2->optString("f2");
+    string stringVal = jo2->optString("f2");
     int intVal = jo2->optInt("f2");
     float floatVal = jo2->optFloat("f2");
     bool boolVal = jo2->optBool("f2"); // only when string is "true", the boolean value will be true, otherwise it is false
     
     char buf[256];
     sprintf(buf, "JSON parsing result\nsource file: Files/test_json\n\nkey: f2\nstring value: \"%s\"\nbool value: %s\nint value: %d\nfloat value: %.2f",
-            stringVal, boolVal ? "true" : "false", intVal, floatVal);
+            stringVal.c_str(), boolVal ? "true" : "false", intVal, floatVal);
     CCLabelTTF* label = CCLabelTTF::create(buf, "Helvetica", 16);
     label->setPosition(ccp(origin.x + visibleSize.width / 2,
                            origin.y + visibleSize.height / 2));

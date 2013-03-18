@@ -311,12 +311,12 @@ CCJSONArray* CCJSONObject::optJSONArray(const char* key) {
 	}
 }
 
-const char* CCJSONObject::optString(const char* key, const char* def) {
+string CCJSONObject::optString(const char* key, const char* def) {
 	PairMap::iterator iter = m_pairs.find(key);
 	if(iter != m_pairs.end()) {
 		return CCJSONValue::castToString(iter->second);
 	} else {
-		return CCJSONValue::copyString(def);
+		return def;
 	}
 }
 
@@ -376,9 +376,9 @@ CCJSONArray* CCJSONObject::optJSONArray(int index) {
 	return CCJSONValue::castToArray(m_keyvalues.at(index));
 }
 
-const char* CCJSONObject::optString(int index, const char* def) {
+string CCJSONObject::optString(int index, const char* def) {
 	if(index < 0 || index >= m_keyvalues.size()) {
-		return CCJSONValue::copyString(def);
+		return def;
 	}
 
 	return CCJSONValue::castToString(m_keyvalues.at(index));
