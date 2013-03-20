@@ -65,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9210CFAF16F9715700E63F7A /* cocos2d-json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cocos2d-json.h"; sourceTree = "<group>"; };
 		923B4ADF16F6BA200082856E /* CCJSONArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCJSONArray.h; sourceTree = "<group>"; };
 		923B4AE016F6BA200082856E /* CCJSONObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCJSONObject.h; sourceTree = "<group>"; };
 		923B4AE116F6BA200082856E /* CCJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCJSONParser.h; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 		923B4ADE16F6BA200082856E /* include */ = {
 			isa = PBXGroup;
 			children = (
+				9210CFAF16F9715700E63F7A /* cocos2d-json.h */,
 				923B4ADF16F6BA200082856E /* CCJSONArray.h */,
 				923B4AE016F6BA200082856E /* CCJSONObject.h */,
 				923B4AE116F6BA200082856E /* CCJSONParser.h */,
